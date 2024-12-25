@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>задание №2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="container d-flex flex-row p-3 align-items-center">
+                <img src="Logo.png" alt="Logo" class="img-fluid" style="width: 100px; height: 100px;">
+                <h1 class="h4 mb-0 ms-3">Третье задание</h1>
+            </div>
+            <nav class="d-none d-lg-block">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="https://www.kubsu.ru">Ссылка меню 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.kubsu.ru">Ссылка 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.kubsu.ru">Ссылка 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-light py-3 d-lg-none">
+        <div class="container">
+            <nav>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="https://www.kubsu.ru">Ссылка меню 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.kubsu.ru">Ссылка 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.kubsu.ru">Ссылка 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="container py-4">
+        <div class="row">
+            <section class="col-12 order-1 order-md-2 mb-4">
+                <h2 class="text-center">Таблица</h2>
+                <table class="table table-bordered table-striped text-center">
+                    <thead>
+                        <tr>
+                            <th>Колонка 1</th>
+                            <th>Колонка 2</th>
+                            <th>Колонка 3</th>
+                            <th>Колонка 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                            <td rowspan="2">2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td colspan="2">4</td>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>6</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="col-12 order-2 order-md-1 mb-4">
+                <h2 class="text-center">Ссылки</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://www.kubsu.ru">1 абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                    <li class="list-group-item"><a href="https://www.kubsu.ru/index.php">2 абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+                    <li class="list-group-item text-center"><img src="image.jpg" class="img-fluid" alt="Image" style="max-width: 100%; height: auto;"></li>
+                    <li class="list-group-item"><a href="/page">4 сокращённая ссылка на внутреннюю страницу</a></li>
+                    <li class="list-group-item"><a href="/">5 сокращённая ссылка на главную страницу</a></li>
+                    <li class="list-group-item"><a href="#check-box">6 ссылка на фрагмент текущей страницы</a></li>
+                    <li class="list-group-item"><a href="https://yandex.ru/maps?a=10&b=30&c=33">7 ссылка с тремя параметрами в URL</a></li>
+                    <li class="list-group-item"><a href="https://yandex.ru/maps?id=13212">8 ссылка с параметром id в URL</a></li>
+                    <li class="list-group-item"><a href="index.html">9 относительная ссылка на страницу в текущем каталоге</a></li>
+                    <li class="list-group-item"><a href="about/">10 относительная ссылка на страницу в каталоге about</a></li>
+                    <li class="list-group-item"><a href="../index/">11 относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                    <li class="list-group-item"><a href="../../index/">12 относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+                    <li class="list-group-item">Контекстная <a href="https://www.kubsu.ru">ссылка</a> в тексте</li>
+                    <li class="list-group-item"><a href="https://wikipedia.org/wiki/Yandex#History">14 ссылка на фрагмент страницы стороннего сайта</a></li>
+                    <li class="list-group-item text-center">
+
+                        <div style="height: 200px; width: 200px;">
+                            <img src="image.jpg" class="img-fluid" usemap="#click-map1" alt="Rectangular Map">
+                        <map name="click-map1">
+                            <area shape="rect" coords="0,0, 200, 200" href="https://yandex.ru/maps/">
+                        </map>
+                        </div>
+                    
+                        <div style="height: 200px; width: 200px;">
+                        <img src="image_circle.jpg" class="img-fluid mt-3" usemap="#click-map2" alt="Circular Map" >
+                        <map name="click-map2">
+                            <area shape="circle" coords="100,100,100" href="https://yandex.ru/maps/">
+                        </map>
+                        </div>
+
+
+                    </li>
+                    <li class="list-group-item"><a href="#">16 ссылка с пустым href</a></li>
+                    <li class="list-group-item"><a>17 ссылка без href</a></li>
+                    <li class="list-group-item"><a href="https://www.kubsu.ru" rel="nofollow">18 ссылка, по которой запрещен переход поисковикам</a></li>
+                </ul>
+            </section>
+
+            <section class="col-12 order-3 mb-4">
+                <h2 class="text-center">Форма</h2>
+                <form action="/" method="POST" class="row g-3">
+                    <div class="col-12">
+                        <label for="name" class="form-label">Введите ФИО</label>
+                        <input type="text" id="name" name="field-name" class="form-control" placeholder="ФИО">
+                    </div>
+                    <div class="col-12">
+                        <label for="phone" class="form-label">Введите ваш номер телефона</label>
+                        <input type="tel" id="phone" name="field-tell" class="form-control" placeholder="8-918-615-33-54">
+                    </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Введите ваш email</label>
+                        <input type="email" id="email" name="field-email" class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label for="date" class="form-label">Текстовое поле даты</label>
+                        <input type="date" id="date" name="field-date" value="2003-06-13" class="form-control">
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label">Ваш пол</label>
+                        <div>
+                            <div class="form-check">
+                                <input type="radio" id="female" name="radio-group-1" value="female" class="form-check-input" checked>
+                                <label for="female" class="form-check-label">Женский</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="male" name="radio-group-1" value="male" class="form-check-input">
+                                <label for="male" class="form-check-label">Мужской</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="language" class="form-label">Ваш любимый язык программирования</label>
+                        <select id="language" name="field-list[]" class="form-select" multiple>
+                            <option value="paskal">Paskal</option>
+                            <option value="c">C</option>
+                            <option value="c++">C++</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="haskel">Haskel</option>
+                            <option value="clojure">Clojure</option>
+                            <option value="prolog">Prolog</option>
+                            <option value="scala">Scala</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="bio" class="form-label">Напишите автобиографию</label>
+                        <textarea id="bio" name="field-autobiography" class="form-control" rows="3" placeholder="не пишите красивую историю о ваших подвигах и победах"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input type="checkbox" id="contract" name="check-box" class="form-check-input">
+                            <label for="contract" class="form-check-label">С контрактом ознакомлен(а)</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-light py-3 text-center">
+        <div class="container">
+            &copy; Цуканов Георгий
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
